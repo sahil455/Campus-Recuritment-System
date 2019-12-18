@@ -1,0 +1,351 @@
+*{	
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+ }
+ body{
+ 	font-family: 'Playfair Display', serif;
+ }
+ /*|-------HEADER------|*/
+ .header{
+ 	width:100%;
+ 	background:linear-gradient(to bottom right, #076585,#fff ); 
+ 	height:150px;
+ 	color:white;
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+ 	justify-content: center;
+ }
+ h1{
+ 	font-size: 3em;
+ }
+ /* |-----NAVIGATION BAR------|*/
+    .navigation{
+          width:100%;
+          background-color: black;
+          height: 60px;
+        }
+       .navigation ul{
+       text-align: center;
+       
+        }
+        .navigation ul li{
+       
+        float: left;
+        margin-top: 5px;
+                     
+        }
+       .navigation ul li a{
+        width: 250px; 
+        color: white;
+        display: inline-block;
+        text-decoration: none;
+        line-height: 40px;
+        padding: 10px 0px 10px 0px; 
+        border-radius: 10px;
+        
+    	}
+      .navigation ul li a:hover{
+        background-color: green;
+    	}
+     .navigation ul li  ul li {
+        background-color: black; 
+   	 }
+    
+      .navigation ul li ul li{
+        float: none;
+    	}
+      .navigation ul li ul{
+        display: none;
+    	}
+      .navigation ul li:hover ul{
+        display: block;
+       }
+ }
+ .navigation::after
+ {
+ 	clear:both;
+ 	content: "";
+ }
+ /*|-------IMAGE SLIDER-------|*/
+ #outerbox{
+ 	width: 1366px;
+ 	overflow: hidden;
+ 	border: 3px solid grey;
+ 	margin-top: 10px;
+ }
+ #sliderbox{
+ 	width: 6830px;
+ 	position: relative;
+ 	animation: slider 20s infinite;
+ }
+ #sliderbox img
+  {
+  	float:left; 
+  }
+  @keyframes slider{
+  	0%
+  	{
+  		left: 0px;
+  	}
+ 20%
+  	{
+  		left: 0px;
+  	}
+ 25%
+  	{
+  		left: -1366px;
+  	}
+ 45%
+  	{
+  		left: -1366px;
+  	}
+ 50%
+  	{
+  		left: -2732px;
+  	}
+ 70%
+  	{
+  		left: -2732px;
+  	}
+ 75%
+  	{
+  		left: -4098px;
+  	}
+ 95%
+  	{
+  		left: -4098px;
+  	}
+  100%
+  	{
+  		left: -5464px;
+  	}
+ 	
+  }
+/*|-------ABOUT US--------|*/
+.about{
+	margin-top: 10px;
+	width:100%;
+	background-image:url(07.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+	text-align: center;
+	color:black;
+
+}
+.aboutus{
+	width: 80%;
+	margin:auto;
+	column-count: 2;
+	column-gap: normal;
+	background-color: rgb(0,0,0,0.2);
+	margin-top:30px;
+	font-size: 1.1em; 
+	color: #fff;
+}
+/*|----- FLIP IMAGES -----|*/
+#tt{
+	color:lightblue;
+	text-align: center;
+	font-family: Estrangelo Edessa;
+}
+#outer{
+	width:100%;
+ 	background:linear-gradient(to bottom right, pink,#fff ); 
+ 
+}
+.flipcard{
+	margin-top: 10px;
+	margin-left: 30px;
+	width: 300px;
+	height: 200px;
+	perspective: 600px;
+}
+.flipcardinner{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.9s;
+	transform-style: preserve-3d;
+}
+.flipcardbackside{
+	background-color:lightblue;
+	color: white;
+	transform:rotateY(180deg);
+}
+.flipcardfrontside img{
+	width: 300px;
+	height: 200px;
+	border: 2px solid red;
+}
+.flipcardfrontside,.flipcardbackside{
+	position: absolute;
+	backface-visibility: hidden;
+}
+.flipcard:hover .flipcardinner{
+	transform: rotateY(180deg);
+}
+
+	   /* |-----------FOOTER-----------|*/
+	   .foot{
+	   	margin:auto;
+	   	height: auto;
+	   	width: 100%;
+	   	background-color: black;
+	   	color: white;
+	   	padding:20px 0px;
+
+	   }
+	   .cont
+	    {
+	    	width: 100%;
+	    	margin: auto;
+	    	height: auto;
+            padding-top: 10px;
+	    	text-align: center;
+	    }
+	    .cont ul
+	    {
+	    	margin: 0px;
+	    	padding: 0px;
+	    	text-align: center;
+	    }
+	    .cont ul li
+	    {
+	    	display: inline-block;
+	    	width: 50px;
+	    	height: 50px;
+	    	margin: 0px 10px;
+	    	background:#32CD32;
+	    	border-radius: 100%;
+	    }
+	    .cont ul li a{
+	    	color: #272727;
+	    	font-size: 25px;
+	    }
+	    .cont ul li a i{
+	    	line-height: 50px;
+
+	    }
+	    /* |------LOGiN BOX------| */
+
+       .back{
+      	background-image: url(10.jpg);
+      	background-repeat: no-repeat;
+      	background-size: cover;
+      }
+      
+      
+      .innerlog input
+      {
+      	width: 70%;
+      	height: 25px;
+      }
+      .btn{
+      	background-color: #019031;
+      	font-size: 0.9em;
+      	color: white;
+      	border-radius: 10px;
+      }
+     #option{
+
+     	   width: 70%;
+      	   height: 25px;
+     }
+     /* |-------REGISTRATION-------| */
+     .reg{
+      	 width: 25%;
+      	 margin: auto;
+      	 margin-top: 70px;
+      	 background-color: rgb(0,0,0,0.2);
+       	 padding: 2px 20px 0px;
+         text-align: center;
+         font-family: Estrangelo Edessa;
+         border:2px solid lightblue;
+         color: #0d0d0d;
+      }
+      .inner-reg{
+      	 border:2px solid lightblue;
+      	 width: 25%;
+      	 margin: auto;
+      	 margin-top: 2px;
+      	 text-align: center;
+      	 height: 450px;
+      	 background-color: rgb(0,0,0,0.4);
+      	 padding-top: 3%;
+      	 font-size: 1.2em;
+      	 color:#0d0d0d;
+      	 text-transform: bold;
+      	 font-family: Estrangelo Edessa;
+      }
+      .inner-reg input
+      {
+      	width: 70%;
+      	height: 25px;
+      }
+      .inner-reg textarea
+      {
+      	width: 80%;
+      	height: 70px;
+      }
+      /* |-----CONTACT US ------|*/
+  .con
+   {
+    width: 100%;
+   }
+  
+     .left-div{
+      width: 25%;
+      margin-left: 50px;
+      margin-top: 40px;
+      
+      font-size: 1.1em; 
+      color: black;
+      border: 2px solid lightblue ;
+     }
+     #head{
+      width: 20%;
+      margin-left: 10px;
+      margin: auto; 
+      text-align: center; 
+      font-size: 1.1em;
+      border: 2px solid lightblue ; 
+     }
+     .right-div{
+      text-align: center;
+      width: 500px;
+      border: 2px solid lightblue ; 
+      margin-left: 800px;
+      margin-top: -102px;
+      font-size: 1.1em;
+
+     }
+    .right-div textarea
+      {
+        width: 80%;
+        height: 100px;
+      }
+      #btn1{
+         width: 50%;
+         background-color: #019031;
+        font-size: 0.9em;
+        color: white;
+        border-radius: 10px;
+      }
+      /* ======Vertical nav bar======*/
+      .vertical-nav{
+        height: 200px;
+        width: 250px;
+        background:linear-gradient(to bottom right, #076585,#fff );
+      }
+      .vertical-nav ul li a{
+        width: 255px; 
+        color: white;
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 1.4em;
+      }
